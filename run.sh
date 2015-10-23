@@ -5,6 +5,6 @@ function pause(){
 }
 
 packer validate createami.json
-pause 'Press [Enter] key to continue...'
+#pause 'Press [Enter] key to continue...'
 
 packer build -var-file=pwd.json createami.json
