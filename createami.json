@@ -9,7 +9,6 @@
     "ssh_username": "ec2-user",
     "communicator": "ssh",
     "ssh_pty" : true,
-    "user_data_file": "pupinst.sh",
     "ami_name": "packer-example {{timestamp}}"
   }],
 "provisioners": [{
