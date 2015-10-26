@@ -14,6 +14,7 @@
   }],
 "provisioners": [{
                     "type": "shell",
+                    "execute_command": "echo 'udata' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'",
                     "script": "sh pupinst.sh"
                 }],
 
