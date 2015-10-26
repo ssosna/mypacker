@@ -9,6 +9,10 @@
     "ssh_username": "ec2-user",
     "communicator": "ssh",
     "ssh_pty" : true,
+    "tags": {
+             "OS_Version": "PRR",
+              "Release": "Latest"
+            },
     "ami_name": "packer-example {{timestamp}}"
   }],
 "provisioners": [{
