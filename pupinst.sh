@@ -1,3 +1,3 @@
 #!/bin/env bash
 yum install -y puppet
-/usr/bin/puppet apply /var/tmp/puptest.pp
+/usr/bin/puppet apply /tmp/puptest.pp
