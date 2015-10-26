@@ -16,6 +16,11 @@
     "ami_name": "packer-example {{timestamp}}"
   }],
 "provisioners": [{
+  "type": "file",
+  "source": "puptest.pp",
+  "destination": "/tmp/puptest.pp"
+}
+  {
                     "type": "shell",
                     "execute_command": "echo 'udata' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'",
                     "script": "pupinst.sh"
